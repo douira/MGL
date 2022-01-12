@@ -88,7 +88,7 @@ $(test_exe): $(test_objs)
 
 
 CFLAGS += -gfull -Og
-CFLAGS += -arch $(shell uname -m)
+CFLAGS += -arch $(shell uname -m) -arch arm64 -arch x86_64
 CFLAGS += -I$(spirv_headers_include_path)
 CFLAGS += -I$(spirv_cross_include_path)
 CFLAGS += -I$(spirv_cross_1_2_include_path)
