@@ -14,9 +14,9 @@ spirv_cross_lib_path := /usr/local/lib
 
 # with uninstalled spirv_headers and spirv_cross
 # uncomment the following lines 
-# spirv_headers_path := ../SPIRV-Headers/include/spirv/1.2
-# spirv_cross_include_path := ../SPIRV-Cross
-# spirv_cross_lib_path := ../SPIRV-Cross/build
+spirv_headers_path := ../SPIRV-Headers/include/spirv/1.2
+spirv_cross_include_path := ../SPIRV-Cross
+spirv_cross_lib_path := ../SPIRV-Cross/build
 
 # build dir
 build_dir := build

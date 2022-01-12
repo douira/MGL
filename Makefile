@@ -5,7 +5,7 @@
 
 # Find SDK path via xcode-select, backwards compatible with Xcode vers < 4.5
 # on M1 monterey, comment out the following line
-# SDK_ROOT = $(shell xcode-select -p)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk
+SDK_ROOT = $(shell xcode-select -p)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk
 
 # with installed spirv_headers and spirv_cross
 spirv_headers_include_path ?= /usr/local/include
@@ -140,7 +140,7 @@ clean:
 	rm -rf $(build_dir)
 
 install-pkgdeps:
-	brew install glm glslang spirv-tools glfw3
+	brew install glm glslang spirv-tools glfw3 mesa
 	(cd .. && git clone --depth 1 https://github.com/KhronosGroup/SPIRV-Headers)
 	(cd .. && git clone --depth 1 https://github.com/KhronosGroup/SPIRV-Cross)
 	(cd ../SPIRV-Cross && mkdir -p build && cd build && cmake .. && make)
