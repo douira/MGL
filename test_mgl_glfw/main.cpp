@@ -2651,6 +2651,26 @@ int main(int argc, const char * argv[])
     // test_readpixels(window, width, height);
     // test_compute_shader(window, width, height);
 
+    // test_clear(window, width, height); //no display, but maybe ok?
+    // test_draw_arrays(window, width, height); //no display
+    // test_draw_elements(window, width, height); //broken
+    // test_draw_range_elements(window, width, height); //no display
+    // test_draw_arrays_instanced(window, width, height); //no display
+    // test_uniform_buffer(window, width, height); //no display
+    // test_1D_textures(window, width, height); //ok but looks weird
+    // test_1D_array_textures(window, width, height); //broken, not defined
+    // test_2D_textures(window, width, height); //ok
+    // test_3D_textures(window, width, height); //ok
+    // test_2D_array_textures(window, width, height); //ok
+    // test_textures(window, width, height, 0, 0); //broken
+    // test_textures(window, width, height, 0, 0, 0, GL_NEAREST, GL_NEAREST); //broken
+    // test_textures(window, width, height, 0, 0, 0, GL_LINEAR, GL_LINEAR); //broken
+    // test_textures(window, width, height, 1, 1, 0, GL_LINEAR_MIPMAP_NEAREST);
+    // test_textures(window, width, height, 1, 1, 8, GL_LINEAR_MIPMAP_NEAREST);
+    // test_framebuffer(window, width, height); //ok
+    // test_readpixels(window, width, height); //broken
+    // test_compute_shader(window, width, height); //broken
+
     glfwTerminate();
 
     return 0;
